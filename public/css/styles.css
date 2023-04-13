@@ -1,0 +1,165 @@
+
+/* for header page*/
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-shadow: #1abc9c;
+  font-weight: bold;
+}
+.nv-brand
+{
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+  color: #1abc9c !important;
+}
+/* for footer page*/
+.footer-padding {
+ padding-bottom: 60px; 
+}
+
+.footer {
+position: fixed;
+text-align: center;
+bottom: 0;
+width: 100%;
+height: 60px;
+background-color: #383737;
+}
+
+.footer p {
+margin-top: 25px;
+font-size: 12px;
+color: #fff;
+}
+
+
+/* home page*/
+
+.home-page
+{
+  margin: 5rem 0 5rem 0;
+  padding: 3rem 0 3rem 0;
+}
+.home-content
+{
+  padding-left: 0;
+
+}
+.home-pic
+{
+ text-align: center;
+}
+.socila-media
+{
+  display: inline-block;
+  margin: 2rem;
+}
+.media-icon
+{
+  padding: 1rem;
+  /* color: black; */
+  display: inline-block;
+}
+.home-btn
+{
+  padding-top: 2rem;
+  padding-left: 0;
+  display: inline-block;
+
+}
+.home-btn .btn:hover
+{
+  background-color: blueviolet;
+}
+@media only screen and (max-width: 600px) {
+  .home-page
+  {
+    margin:3rem 0 5rem 0;
+    padding:2rem 0 2rem 0;
+  }
+  .home-content
+  {
+    padding-left: 1rem;
+  }
+  .home-image
+  {
+    height: 360px;
+    width: 360px;
+  }
+  .home-btn
+  {
+    display: block;
+  }
+}
+
+/* about page  */
+.about-header
+{
+  text-align: center;
+}
+.about
+{
+  margin: 6rem 0 3rem 0;
+}
+.about-content
+{
+  font-size: large;
+}
+
+@media only screen and (max-width: 600px)
+{
+  .about{
+    margin:4rem 0 3rem 0;
+
+  }
+  .about-content
+  {
+    margin-top: 2rem;
+  }
+}
+
+/* education page  */
+.education-header
+{
+  text-align: center;
+}
+.education-content
+{
+  text-align: center;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.education-content .cards
+{
+  background-color: #c9ecef;
+  margin-top:3rem;
+  /* padding: 3rem 2rem 3rem 2rem; */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+}
+.education-content .cards:hover
+{
+  background-color: #1783bd;
+}
+@media only screen and (max-width: 600px) {
+  .education-content
+  {
+    margin-top: 1rem;
+  }
+  .education-content .cards
+{
+  background-color: #c9ecef;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+  
+}
