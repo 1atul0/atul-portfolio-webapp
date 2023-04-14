@@ -1,10 +1,11 @@
 .body
 {
   /* background-image: url(/images/milad-fakurian-GJKx5lhwU3M-unsplash\ \(1\).jpg); */
-  background-color: #E2E6EE;
+  background-color: #CED5DF;
   background-repeat: no-repeat;
   background-size: cover;
   text-decoration-color: blue;
+  
 }
 /* for header page*/
 .navbar {
@@ -82,7 +83,7 @@ color: #fff;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #E2E6EE;
+  background-color: #CED5DF;
   border-left: 2px solid #57025f;
   animation: animate 4s steps(12) infinite;
 }
@@ -301,3 +302,66 @@ color: #fff;
 }
 
 
+/* project page  */
+.project-header{
+  text-align: center;
+  
+}
+
+
+
+
+/* contact page  */
+
+.contact-cards{
+  margin: 0;
+  padding: 0;
+  height: 800px;
+
+}
+
+
+.contact-cards .pic
+{
+ background-image: url(/images/2.jpg);
+  background-size: cover;
+  opacity: 100%;
+  height: 800px;
+  padding: 10rem 3rem 8rem 8rem;
+
+
+
+  
+}
+.contact-pic-content
+{
+  color: white;
+  padding: 4rem 2rem 0 0rem;
+}
+.contact-pic-content .box
+{
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.contact-icon
+{
+  margin: 0 2rem 0 1rem;
+}
+.contact-form
+{
+  
+  margin: 0;
+  background-color: #a1c4fd ;
+  height: 800px;
+  padding: 3rem 2rem 3rem 2rem;
+}
+.contact-form h1{
+  text-align: center;
+}
+@media only screen and (max-width: 600px)  {
+  .contact-cards .pic{
+    padding: 1rem  ;
+  }
+}

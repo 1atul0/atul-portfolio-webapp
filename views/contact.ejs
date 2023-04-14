@@ -1,3 +1,80 @@
 <%- include("partials/header")%>
-<h1>Contact</h1>
+<div class="contact-page">
+  <div class="contact-content">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-sm-12  contact-cards">
+        <div class="  pic">
+          <div class="contact-pic-content">
+            <div class="Address box">
+              <div><h4><i class="fa-solid fa-map-location fa-beat-fade contact-icon " style="color: #38ffb3;"></i></h4></div>
+              <div><h4>Address </h4>
+                <p style="color: #38ffb3;">Mahadipur, Piroo, Haspura,Aurangabad
+                  824120,India
+                </p></div>
+            </div >
+            <div class="mob box">
+              <div><h4><i class="fa-solid fa-phone fa-beat-fade contact-icon "></i></h4></div>
+              <div><h4> Lets Talk </h4>
+                <p style="color: #38ffb3;">+91 6202326473
+                </p></div>
+            </div>
+            <div class="email box">
+              <div><h4><i class="fa-solid fa-envelope fa-beat-fade contact-icon " style="color: #ec3c3c;"></i></h4></div>
+              <div><h4>General Support </h4>
+                <p><email style="color: #38ffb3;">919atul@gmail.com</email>
+                </p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-sm-12 contact-cards">
+        <div class=" my-6">
+          <div class="row justify-content-center">
+            <div class="contact-form">
+              <h1 class="mb-3">Send Me A Message</h1>
+              <form action="mailto:919atul@gmail.com">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="your-name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="your-name" name="your-name" placeholder="First-name" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="your-surname" class="form-label">Your Surname</label>
+                    <input type="text" class="form-control" id="your-surname" name="your-surname" placeholder="Last-name"required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="your-email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="your-email" name="your-email" placeholder="xyz@gmail.com" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="your-subject" class="form-label">Your Subject</label>
+                    <input type="text" class="form-control" id="your-subject" name="your-subject" placeholder="help">
+                  </div>
+                  <div class="col-12">
+                    <label for="your-message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="your-message" name="your-message" rows="5"  placeholder="type your message here..." required ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <button data-res="<?php echo $sum; ?>" type="submit" class="btn btn-dark w-100 fw-bold" >Send</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
 <%- include("partials/footer")%>
