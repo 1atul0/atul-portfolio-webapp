@@ -1,3 +1,206 @@
 <%- include("partials/header")%>
-<h1>Skills</h1>
+<div class="skill-page">
+  <div class="skill-header">
+    <h1>Skills</h1>
+    <hr />
+  </div>
+
+  <!-- for navigation bar of skills page  -->
+  <div class="skill-nav" type="button">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card skill-nav-icon" id="skill-development">
+          Development
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card skill-nav-icon" id="skill-cp">
+          Competitive progamming
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card skill-nav-icon" id="skill-coursework">Course Work</div>
+      </div>
+    </div>
+  </div>
+
+  <!--  skill content  of development -->
+  <div class="skill-development-content">
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card skill-cards">
+          <h2>Frontend</h2>
+          <hr />
+          <h3>
+            <img src="/images/flaticons/html5.webp" class="skill-image" />HTML
+          </h3>
+          <h3>
+            <img src="/images/flaticons/css3.webp" class="skill-image" />CSS
+          </h3>
+          <h3>
+            <img
+              src="/images/flaticons/js.webp"
+              class="skill-image"
+            />Javascript
+          </h3>
+          <h3>
+            <img src="/images/flaticons/jquery.png" class="skill-image" />jQuery
+          </h3>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card skill-cards">
+          <h2>Backend</h2>
+          <hr />
+          <h3>
+            <img
+              src="/images/flaticons/express.webp"
+              class="skill-image"
+            />Express.js
+          </h3>
+          <h3>
+            <img
+              src="/images/flaticons/nodejs.webp"
+              class="skill-image"
+            />Node.js
+          </h3>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card skill-cards">
+          <h2>Database</h2>
+          <hr />
+          <h3>
+            <img
+              src="/images/flaticons/mongodb.webp"
+              class="skill-image"
+            />Mongodb
+          </h3>
+          <h3>
+            <img src="/images/flaticons/sql.png" class="skill-image" />SQL
+          </h3>
+          <h3>
+            <img
+              src="/images/flaticons/mongoose.png"
+              class="skill-image"
+            />Mongoose
+          </h3>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card skill-cards">
+          <h2>Cloud Services</h2>
+          <hr />
+          <h3>
+            <img
+              src="/images/flaticons/firebase.webp"
+              class="skill-image"
+            />Firebase
+          </h3>
+          <h3>
+            <img
+              src="/images/flaticons/netlify.webp"
+              class="skill-image"
+            />Netlify
+          </h3>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card skill-cards">
+          <h2>Web Development Tools</h2>
+          <hr />
+          <h3>
+            <img src="/images/flaticons/git.webp" class="skill-image" />Git
+          </h3>
+          <h3>
+            <img
+              src="/images/flaticons/github.webp"
+              class="skill-image"
+            />Github
+          </h3>
+          <h3>
+            <img src="/images/flaticons/linux.png" class="skill-image" />Linux
+            commands
+          </h3>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card skill-cards">
+          <h2>App Development(Basic)</h2>
+          <hr />
+          <h3>
+            <img
+              src="/images/flaticons/flutter.png"
+              class="skill-image"
+            />Flutter
+          </h3>
+          <h3>
+            <img src="/images/flaticons/dart.png" class="skill-image" />Dart
+          </h3>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+  <!-- skill competitive programming content  initially this is hidden -->
+  <div class="skill-cp-content skill-invisible">
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card skill-cards">
+          <h2>Programming Language</h2>
+          <hr />
+          <h3><img src="/images/flaticons/c.webp" class="skill-image" />C</h3>
+          <h3>
+            <img src="/images/flaticons/c++.webp" class="skill-image" />C++
+          </h3>
+          <h3>
+            <img
+              src="/images/flaticons/python.webp"
+              class="skill-image"
+            />Python
+          </h3>
+          <h3>
+            <img
+              src="/images/flaticons/js.webp"
+              class="skill-image"
+            />Javascript
+          </h3>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card skill-cards">
+          <h2>Competitive programming </h2>
+          <hr />
+          <h3><img src="/images/flaticons/dsa.png" class="skill-image" />Data Structure and Algorithm in C++</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+
+  <!-- skill coursework content  ,initially this is hidden -->
+  <div class="skill-coursework-content skill-invisible">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-6 col-sm-12">
+        <div class="card skill-cards">
+          <h2>Coursework</h2>
+          <hr />
+          <h4><i class="fa-solid fa-star fa-beat-fade"></i> Database Management System</h4>
+          <h4><i class="fa-solid fa-star fa-beat-fade"></i> Object Oriented Programming using C++</h4>
+          <h4><i class="fa-solid fa-star fa-beat-fade"></i> Data Structure and Algorithm in C++</h4>
+          <h4><i class="fa-solid fa-star fa-beat-fade"></i> Theory of Computation</h4>
+          <h4><i class="fa-solid fa-star fa-beat-fade"></i> Discrete Mathematics</h4>
+          <h4><i class="fa-solid fa-star fa-beat-fade"></i> software Engineering</h4>
+          <h4><i class="fa-solid fa-star fa-beat-fade"></i> Probablity and Statics</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <%- include("partials/footer")%>

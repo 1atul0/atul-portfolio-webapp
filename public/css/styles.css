@@ -1,4 +1,11 @@
-
+.body
+{
+  /* background-image: url(/images/milad-fakurian-GJKx5lhwU3M-unsplash\ \(1\).jpg); */
+  background-color: #E2E6EE;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-decoration-color: blue;
+}
 /* for header page*/
 .navbar {
   padding-top: 15px;
@@ -41,7 +48,59 @@ color: #fff;
 
 
 /* home page*/
+.home-image
+{
+  height: 100%;
+  width: 100%;
+}
+/* for text animation  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+}
+.container .text{
+  position: relative;
+  color: #f305ef;
+  font-size: 30px;
+  font-weight: 600;
+}
+.container .text.first-text{
+  color: #0000ff;
+}
+@media only screen and (max-width: 600px){
+  .container .text.first-text{
+    display: block;
+  }
+}
+.text.sec-text:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #E2E6EE;
+  border-left: 2px solid #57025f;
+  animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+  40%, 60%{
+      left: calc(100% + 4px);
+  }
+  100%{
+      left: 0%;
+  }
+}
 
+
+
+
+.home-page .p{
+  font-size: 22px;
+}
 .home-page
 {
   margin: 5rem 0 5rem 0;
@@ -67,6 +126,33 @@ color: #fff;
   /* color: black; */
   display: inline-block;
 }
+/* particular color for median icon  */
+.media-facebook
+{
+  color:#3b5998;
+}
+.media-twitter
+{
+  color:#1DA1F2;
+}
+.media-instagram
+{
+  color:#d748f7;
+}
+.media-github
+{
+  color:#333;
+}
+.media-email
+{
+  color:#c26421;
+}
+.media.linkedin
+{
+  color:#488ef7;
+}
+
+
 .home-btn
 {
   padding-top: 2rem;
@@ -110,7 +196,7 @@ color: #fff;
 }
 .about-content
 {
-  font-size: large;
+  font-size: 22px;
 }
 
 @media only screen and (max-width: 600px)
@@ -129,6 +215,7 @@ color: #fff;
 .education-header
 {
   text-align: center;
+  margin-top: 1rem;
 }
 .education-content
 {
@@ -139,7 +226,8 @@ color: #fff;
 }
 .education-content .cards
 {
-  background-color: #c9ecef;
+  background-color: #ccffff;
+  background-image: radial-gradient(circle, #ced5df, #d5d4e1, #dfd3e0, #e8d3db, #eed3d3);
   margin-top:3rem;
   /* padding: 3rem 2rem 3rem 2rem; */
   padding-top: 2rem;
@@ -148,7 +236,8 @@ color: #fff;
 }
 .education-content .cards:hover
 {
-  background-color: #1783bd;
+
+  background-image: linear-gradient(to left, #488ef7, #5688fd, #818ed1, #a3a3d8, #d29f9f);
 }
 @media only screen and (max-width: 600px) {
   .education-content
@@ -163,3 +252,52 @@ color: #fff;
 }
   
 }
+
+/* skill page  */
+.skill-header
+{
+  margin-top: 1rem;
+  text-align: center;
+
+}
+.skill-nav-icon
+{
+  text-align: center;
+  background-color: #83fae2;
+}
+.card
+{
+  margin-top: 1rem;
+}
+.skill-development-content ,.skill-cp-content, .skill-coursework-content
+{
+  margin:4rem 0 4rem 0;
+}
+.skill-invisible
+{
+  display: none;
+}
+.skill-cards
+{
+  /* height: max-content; */
+  background-image: linear-gradient(to left, #afc7ea, #becae5, #c9cde0, #d1d1db, #d6d6d6);
+  padding: 3rem;
+  margin-bottom: 3rem;
+}
+.skill-cards:hover{
+  background-image: linear-gradient(to left, #488ef7, #5688fd, #818ed1, #a3a3d8, #d29f9f);
+}
+.skill-image
+{
+  width: 20%;
+  padding: 0.5rem;
+}
+@media only screen and (max-width: 600px) 
+{
+  .skill-cards{
+    margin-left:1rem;
+    margin-right:1rem;
+  }
+}
+
+
