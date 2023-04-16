@@ -20,13 +20,16 @@
   text-shadow: #1abc9c;
   font-weight: bold;
 }
+.nav-link:focus{
+  background-color: blue;
+}
 .nv-brand
 {
   font-size: 25px;
   letter-spacing: 5px;
 }
 .navbar-nav  li a:hover {
-  color: #1abc9c !important;
+  color: #ffffff !important;
 }
 /* for footer page*/
 .footer-padding {
@@ -228,8 +231,8 @@ color: #fff;
 }
 .education-content .cards
 {
-  background-color: #ccffff;
-  background-image: radial-gradient(circle, #ced5df, #d5d4e1, #dfd3e0, #e8d3db, #eed3d3);
+  background-color: #bdbfbf;
+  
   margin-top:3rem;
   /* padding: 3rem 2rem 3rem 2rem; */
   padding-top: 2rem;
@@ -238,8 +241,9 @@ color: #fff;
 }
 .education-content .cards:hover
 {
+  background-color: #83fae2;
 
-  background-image: linear-gradient(to left, #488ef7, #5688fd, #818ed1, #a3a3d8, #d29f9f);
+  /* background-image: linear-gradient(to left, #488ef7, #5688fd, #818ed1, #a3a3d8, #d29f9f); */
 }
 @media only screen and (max-width: 600px) {
   .education-content
@@ -265,7 +269,7 @@ color: #fff;
 .skill-nav-icon
 {
   text-align: center;
-  background-color: #83fae2;
+  background-color: #D3D3D3;
 }
 .card
 {
@@ -282,12 +286,13 @@ color: #fff;
 .skill-cards
 {
   /* height: max-content; */
-  background-image: linear-gradient(to left, #afc7ea, #becae5, #c9cde0, #d1d1db, #d6d6d6);
+  background-color: #D3D3D3;
   padding: 3rem;
   margin-bottom: 3rem;
 }
 .skill-cards:hover{
-  background-image: linear-gradient(to left, #488ef7, #5688fd, #818ed1, #a3a3d8, #d29f9f);
+  background-color: #83fae2;
+  /* background-image: linear-gradient(to left, #e7f45a, #cefd56, #b7c2f6, #a3a3d8, #d29f9f); */
 }
 .skill-image
 {
