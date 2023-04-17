@@ -11,7 +11,7 @@ const text = document.querySelector(".sec-text");
 
 const textLoad = () => {
   setTimeout(() => {
-    text.textContent = "Full Stack Web Developer";
+    text.textContent = "Full Stack Developer";
   }, 0);
   setTimeout(() => {
     text.textContent = "Competitive Progammer ";

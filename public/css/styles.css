@@ -6,6 +6,8 @@
   background-size: cover;
   text-decoration-color: blue;
   
+
+  
 }
 /* for header page*/
 .navbar {
@@ -74,8 +76,12 @@ color: #fff;
 }
 .container .text.first-text{
   color: #000000;
+  font-size: 30px;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 640px){
+  .container .text{
+    font-size: 18px;
+  }
   .container .text.first-text{
     display: block;
   }
@@ -355,9 +361,6 @@ color: #fff;
   text-decoration: none;
   font-size: large;
   color: rgb(76, 75, 75);
-}
-.project-link:hover{
-  
 }
 .project-img{
   border:solid grey;
