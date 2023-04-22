@@ -14,7 +14,7 @@ const textLoad = () => {
     text.textContent = "Full Stack Developer";
   }, 0);
   setTimeout(() => {
-    text.textContent = "Competitive Progammer ";
+    text.textContent = "Competitive coder ";
   }, 4000);
   setTimeout(() => {
     text.textContent = "Quick Learner";
