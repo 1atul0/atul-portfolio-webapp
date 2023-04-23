@@ -1,9 +1,10 @@
 # atul-portfolio-webapp
-#I have made this using Frontend(HTML,CSS,JS) and Backend(node.js,Express js ). 
-#I have used npm package like body-parser for getting data from 'contact us' page and used npm package nodemailer to send this data to my email.
-#Currently this portfolio is hosted on netlify for free version;
-#website link:-  https://gentle-taiyaki-4de66a.netlify.app/
-
+I have made this using Frontend(HTML,CSS,JS) and Backend(node.js,Express js ). <br>
+#I have used npm package like body-parser for getting data from 'contact us' page and used npm package nodemailer to send this data to my email.<br>
+#Currently this portfolio is hosted on netlify for free version;<br>
+#website link:-  https://gentle-taiyaki-4de66a.netlify.app/<br>
+<br>
+<br>
 
 
 # 💫 About Me:
