@@ -2,6 +2,8 @@ const express=require("express");
 const bodyParser=require("body-parser");
 const ejs=require("ejs");
 const app=express();
+const nodemailer=require('nodemailer');
+
 
 app.set("view engine",'ejs');
 app.use(bodyParser.urlencoded({extended:true}));
@@ -32,7 +34,37 @@ app.get("/contact",function(req,res){
 })
 
 
+app.post('/contact',function(req,res){
+  const {name,surname,email,subject,message}=req.body;
+  const transporter=nodemailer.createTransport({
+    service:'gmail',
+    auth:{
+      user:'919atul@gmail.com',
+      pass:'qfpqeqikkcsxzhpk'
+    }
+  });
+  const mailOptions={
+    from:email,
+    to:'919atul@gmail.com',
+    subject:subject,
+    text:'Name: '+name+' '+surname+'\nEmail: '+email+'\nMessage: '+message,
+  };
 
+  transporter.sendMail(mailOptions,function(error,info){
+    if(error){
+      console.log(error);
+      
+    }else{
+      console.log('Email sent: '+info.response);
+      res.send('<script>alert("Thank You for Contacting me!"); window.location = "/contact";</script>');
+      res.redirect("contact");
+
+    }
+  });
+
+
+
+});
 
 
 
