@@ -56,7 +56,7 @@ app.post('/contact',function(req,res){
       
     }else{
       console.log('Email sent: '+info.response);
-      res.send('<script>alert("Thank You for Contacting me!"); window.location = "/contact";</script>');
+      res.write('<script>alert("Thank You for Contacting me!"); window.location = "/contact";</script>');
       res.redirect("/contact");
 
     }
