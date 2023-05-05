@@ -4,6 +4,9 @@ const ejs=require("ejs");
 const app=express();
 const nodemailer=require('nodemailer');
 
+let result=false;
+let checkError=false;
+
 
 app.set("view engine",'ejs');
 app.use(bodyParser.urlencoded({extended:true}));
@@ -11,7 +14,9 @@ app.use(express.static("public"));
 
 
 app.get("/",function(req,res){
+  
   res.render('home');
+  
 })
 
 app.get("/about",function(req,res){
@@ -30,7 +35,18 @@ app.get("/achievement",function(req,res){
   res.render('achievement');
 })
 app.get("/contact",function(req,res){
-  res.render('contact');
+  if (result===true)
+  {
+    result=false;
+    res.render('contact',{message:"Thanks for contacting me!"} );
+  }
+  else if(checkError===true)
+  {
+    checkError=false;
+    res.render('contact',{message:"Something went wrong! Please Try again."})
+  }
+  else
+ res.render('contact',{message:null});
 })
 
 
@@ -53,11 +69,19 @@ app.post('/contact',function(req,res){
   transporter.sendMail(mailOptions,function(error,info){
     if(error){
       console.log(error);
+      result=false;
+      checkError=true;
+      res.redirect("/contact");
+      
       
     }else{
       console.log('Email sent: '+info.response);
-      res.write('<script>alert("Thank You for Contacting me!"); window.location = "/contact";</script>');
-      res.redirect("/contact");
+      result=true;
+
+      res.redirect('/contact');
+      // res.write('<script>alert("Thank You for Contacting me!");</script>');
+      // setTimeout(() => { res.redirect("/"); }, 5000); 
+      
 
     }
   });

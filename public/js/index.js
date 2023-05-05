@@ -56,3 +56,19 @@ $("#skill-coursework").click(function () {
   $("#skill-development").css("background", "#D3D3D3");
   $("#skill-cp").css("background", "#D3D3D3");
 });
+
+
+//for alert after submission  not working
+// function submitForm() {
+//   // Get the form element
+//   var form = document.getElementById("myForm");
+
+//   // Submit the form
+//   // form.submit();
+
+//   // Display an alert message
+//   alert("Form submitted successfully!");
+
+//   // Redirect to the home page
+//   // window.location.href = "home.html";
+// }
