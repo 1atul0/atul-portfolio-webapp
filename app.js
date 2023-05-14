@@ -4,6 +4,7 @@ const ejs=require("ejs");
 const app=express();
 const nodemailer=require('nodemailer');
 
+//for checking the form is submitted
 let result=false;
 let checkError=false;
 
@@ -95,6 +96,6 @@ app.post('/contact',function(req,res){
 
 
 
-app.listen(3000,function(){
+app.listen(3000,process.env.PORT,function(){
   console.log("server is running on port 3000");
 })
