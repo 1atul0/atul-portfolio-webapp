@@ -96,6 +96,6 @@ app.post('/contact',function(req,res){
 
 
 
-app.listen(3000,process.env.PORT,function(){
+app.listen(3000 || process.env.PORT,function(){
   console.log("server is running on port 3000");
 })
